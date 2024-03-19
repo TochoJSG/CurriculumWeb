@@ -1,0 +1,12 @@
+.container_pc .pc_card{position:relative;height:255px;background:#fff;display:flex;margin:auto;border-radius:6px;}
+.container_pc .pc_card .PcImgBx{position:absolute;top:0;left:0;width:100%;height:100%;background:#333;z-index:1;display:flex;justify-content:center;align-items:center;overflow:hidden;transition:0.5s ease-in-out;}
+.container_pc .pc_card:hover .PcImgBx{width:150px;height:150px;left:-99px;left:calc(50%-99px);transition:1.666s ease-in-out;background:#ff0057;border-radius:17%;}
+.container_pc .pc_card:hover .PcImgBx:before{content:attr(data-text);position:absolute;bottom:0;left:0;width:100%;text-align:center;font-size:6em;color:rgba(255,255,255,0.05);font-weight:700;}
+.container_pc .pc_card .PcImgBx img{max-width:100px;transition:0.5s ease-in-out;}
+.container_pc .pc_card:hover .PcImgBx img{max-width:75px;}
+.container_pc .pc_card .PcContent{position:absolute;right:0;width:calc(100%-75px);height:100%;padding:20px;display:flex;justify-content:center;align-items:center;text-align:justify;}
+.container_pc .pc_card .PcContent h3,
+.container_pc .pc_card .PcContent h2{font-size:23px;text-align:right;overflow:hidden;}
+.container_pc .pc_card .PcContent p{margin:17px 1px 3px 33px;font-size:.9m;text-align:justify;font-weight:300;padding:0px;}
+.container_pc .pc_card .PcContent a{text-align:center;display:inline-block;padding:5px 17px;background:#333;text-decoration:none;color:#fff;border-radius:3px;width:66.666%;margin:8px 16.667% 3px;}
+.container_pc .pc_card .PcContent a:hover{color:#ffad;}
