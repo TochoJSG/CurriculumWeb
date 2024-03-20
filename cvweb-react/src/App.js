@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './componentes/Header';
 import Skills from './componentes/Skills';
+import Footer from './componentes/Footer';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
         </div>
       </div>
       <div className='sectionFS'>
-
+        <Footer />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 @importurl('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:linear-gradient(90deg,#003366 0%,#003366 30%,#00CCFF 30%,#00CCFF 100%);}
-.btn-wsp{position:fixed;width:66px;height:66px;line-height:55px;bottom:90px;right:30px;background:#0df053;color:#fff;border-radius:50px;text-align:center;font-size:66px;box-shadow:0px 1px 10px rgba(0,0,0,0.3);z-index:100;text-decoration:none;}
+.btn-wsp{position:fixed;width:99px;height:99px;line-height:55px;bottom:90px;right:33px;background:#0df053;color:#fff;border-radius:50px;text-align:center;font-size:66px;box-shadow:0px 1px 10px rgba(0,0,0,0.3);z-index:100;text-decoration:none;}
 .btn-wsp:hover{text-decoration:none;color:#415;background:#daf;}
 .contactUs{z-index:1;top:100px;position:relative;width:100%;padding:40px 100px;}
 .contactUs .title{height:auto;justify-content:center;align-items:center;font-size:1.6em;}
