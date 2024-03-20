@@ -7,17 +7,18 @@ function Header(props){
     const menuToggle=()=>{
 	menuToggle.classList.toggle('active');
 	//navigation.classList.toggle('active');
-};
-const toggleMenu=()=>{
+	};
+	const toggleMenu=()=>{
 	menuToggle.classList.remove('active');
 	//navigation.classList.remove('active');
-};
+	};
     const toggle=()=>{
         var sec = document.getElementById('sec');
         var nav = document.getElementById('navigation');
         sec.classList.toggle('active');
         nav.classList.toggle('active');
     };
+	
     return(
     <div className="sectionFS">
 <section className="banner parallax" id="sec">
@@ -33,17 +34,17 @@ const toggleMenu=()=>{
 
 	</div>
 	<ul className="sci">
-		<li><a href={props.linkGit}><img src={props.img1} /></a></li>
-		<li><a href={props.linkYT}><img src={props.img2} /></a></li>
+		<li><a href={ props.linkGit }><img src={ props.img1 } /></a></li>
+		<li><a href={ props.linkYT }><img src={ props.img2 } /></a></li>
 	</ul>
 </section>
 <div id="navigation">
 <ul>
-	<li data-text="Home"><a target="_blank" href={props.linkGit} onClick={toggleMenu}>Principal
+	<li data-text="Home"><a target="_blank" href={props.linkGit} onClick={ toggleMenu }>Principal
 		</a></li>
-	<li data-text="About"><a id="buttonUs" href="#about" onClick={toggleMenu}>Nosotros
+	<li data-text="About"><a id="buttonUs" href="#about" onClick={ toggleMenu }>Nosotros
 		</a></li>
-	<li data-text="Contact"><a id="buttonContact" href="contacto.html" onClick={toggleMenu}>Contact
+	<li data-text="Contact"><a id="buttonContact" href="contacto.html" onClick={ toggleMenu }>Contact
 		</a></li>
 </ul>
 </div>

@@ -1,45 +1,6 @@
-.App {
-  position:relative;
-	width:100%;
-	height:100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	scroll-snap-type: y mandatory;
-}
-
-.App .sectionFS{
-	overflow-x:hidden;overflow-y:hidden;
-	position:relative;
-	width:100%;
-	height:100vh;
-	scroll-snap-align:start;
-	background-blend-mode:multiply;
-}
-.App .sectionFS:nth-child(1){
-	display: block;
-	scroll-snap-align: center;	
-	height: 100vh;	
-	background:#415 url(img/w1.png);
-	background-size:cover;
-	background-attachment:fixed;
-	background-blend-mode:darken;
-}
-.App .sectionFS:nth-child(2){
-	display: block;
-	scroll-snap-align: center;
-	height: 100vh;
-	background:#daff url(img/w2.png);
-	background-size:cover;
-	background-attachment:fixed;
-	background-blend-mode:color-dodge;
-}
-.App .sectionFS:nth-child(3){
-	display: block;
-	scroll-snap-align: center;
-	height: 100vh;
-	background:#ffad url(img/w1.png);
-	background-size:cover;
-	background-attachment:fixed;
-	background-blend-mode:multiply;
-}
+.App {position:relative;width:100%;height:100vh;overflow-x:hidden;overflow-y:auto;scroll-snap-type:y mandatory;}
+.App .sectionFS{overflow-x:hidden;overflow-y:hidden;position:relative;width:100%;height:100vh;scroll-snap-align:start;background-blend-mode:multiply;}
+.App .sectionFS:nth-child(1){display:block;scroll-snap-align:center;height:100vh;background:#415 url(img/w1.png);background-size:cover;background-attachment:fixed;background-blend-mode:darken;}
+.App .sectionFS:nth-child(2){display:block;scroll-snap-align:center;height:100vh;background:#daff url(img/w2.png);background-size:cover;background-attachment:fixed;background-blend-mode:color-dodge;}
+.App .sectionFS:nth-child(3){display:block;scroll-snap-align:center;height:100vh;background:#ffad url(img/w1.png);background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
 .container_pc{position:relative;width:100%;height:100vh;padding:17px 33px;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:auto;grid-gap:17px;}

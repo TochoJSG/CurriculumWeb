@@ -1,6 +1,6 @@
 import React from "react";
 import '../estilos/Carousel.css';
-function Carousel(props){
+function Carousel(){
   function carouselInner(){
   const IMAGENES=['../img/main.jpg','../img/second.jpg','../img/third.jpg'];
   const TIEMPO_INTERVALO_MILESIMAS_SEG=5000;

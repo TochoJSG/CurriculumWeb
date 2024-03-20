@@ -5,14 +5,13 @@
 		align-items: center;
 		min-height: 100vh;
 		flex-direction: column;
-		background: #ede7f6;
 	}
 	footer{
 		position: relative;
 		width: 100%;
 		height: 90vh;
 		padding: 50px 154px;
-		background: #111;
+		background:none;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -31,9 +30,15 @@
 	}
 	footer .container_foo h2{
 		position: relative;
-		color: #fff;
-		font-weight: 500;
+		color: black;
+		font-weight: 600;
 		margin-bottom: 15px;
+	}
+	footer .flechaFooter{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		grid-gap: 17px;
 	}
 	footer .container_foo h2:before{
 		content:'';
@@ -45,7 +50,7 @@
 		background: #f00;
 	}
 	footer p{
-		color: #999; 
+		color:black; 
 	}
 	.sci_{
 		margin-top: 20px;
@@ -70,7 +75,7 @@
 		background: #f00; 
 	}
 	.sci li a .fa{
-		color: #fff;
+		color:black;
 		font-size: 21px;
 	}
 	.quickLinks{
@@ -81,13 +86,13 @@
 		list-style: none;
 	}
 	.quickLinks ul li a{
-		color: #999;
+		color:black;
 		text-decoration: none;
 		margin-bottom: 10px;
 		display: inline-block;
 	}
 	.quickLinks ul li a:hover{
-		color:#fff;
+		color:black;
 	}
 	.contact{
 		width: calc(35% -60px);
@@ -98,23 +103,23 @@
 		
 	}
 	.contact .info li{
-		dsiplay: flex;
+		display: flex;
 		margin-bottom:16px;
 	}
 	.contact .info li span:nth-child(1){
-		color: #fff;
+		color: black;
 		font-size: 19px;
 		margin-right: 10px;
 	}
 	.contact .info li span{
-		color: #999;
+		color:black;
 	}
 	.contact .info li a{
-		color: #999;
+		color:black;
 		text-decoration: none;
 	}
 	.contact .info li a:hover{
-		color: #fff;
+		color:black;
 	}
 	.copyrightText{
 		width: 100%;
