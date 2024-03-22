@@ -3,8 +3,8 @@ import '../estilos/Skills.css';
 const Skills = props =>(
     <div className="pc_card">
 		<div className="PcImgBx" data-text={ props.texto }>
-			<img src={ props.img1 } />
-			<img src={ props.img2 } />
+			<img src={ require(`../img/${ props.img1 }.png`) } />
+			<img src={ require(`../img/${ props.img2 }.png`) } />
 		</div>
 		<div className="PcContent">
 			<div>

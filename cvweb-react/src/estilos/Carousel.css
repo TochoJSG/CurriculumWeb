@@ -1,2 +1,4 @@
-.carousel-contendor{width:333px;height:333px;margin:0;display:flex;flex-wrap: wrap; overflow:hidden;padding:0;position:relative;}
-.carousel-contendor #imagen{object-fit:cover;object-position:center;width:100%;height:100%;background-size:cover;z-index:1000;position:relative;}
+.carousel-item{align-items: center;justify-content: center;color: whitesmoke;}
+.carousel-item.carousel-caption h5{font-size:1.7em;font-weight:700;color: whitesmoke;text-align:center;letter-spacing:6px;}
+.carousel-item.carousel-caption h6{font-size:1.1em;font-weight:600;color: whitesmoke;text-align:center;letter-spacing:3px;}
+.carousel-item .img-main{display: block;position:relative;height:250px;width: 200px;border-radius: 17px;}
