@@ -1,35 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './componentes/Header';
-import Skills from './componentes/Skills';
-import Footer from './componentes/Footer';
-function App() {
+import { Routes, Route,BrowserRouter } from "react-router-dom";
+import Inicio from './paginas/Inicio';
+import Contact from './paginas/Contact';
+import NoExiste from './paginas/NoExiste';
+const App=()=>{
   return (
-    <div className="App">
-      <div className='sectionFS'>
-        <Header linkYT='gfghj' linkGit='jhgghj' logo='main' img1='git' img2='yt' /> 
-      </div>
-      <div className='sectionFS'>
-        <div className='container_pc'>
-          <Skills texto='Lenguajes' 
-          img1='c' img2='java'
-          title='Dev Lenguajes' desc='Java, C,C++,C#' />
-          <Skills texto='Base de Datos' 
-          img1='ser' img2='sql'
-          title='Data Bases' desc='Sql with experience in SQL Server, MySql' />
-          <Skills texto='Frameworks' 
-          img1='web' img2='php'
-          title='Frameworks & Librarys' desc='Nodejs applied to react and express' />
-          <Skills texto='Repositories' 
-          img1='desarrollo' img2='git'
-          title='Repositoryes & Dev methologies' desc='Scrum Development ' />
-        </div>
-      </div>
-      <div className='sectionFS'>
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Inicio /> } />
+        <Route path="contacto" element={ <Contact /> } />
+        <Route path="*" element={ <NoExiste /> } />
+      </Routes>
+    </BrowserRouter>
   );
-}
-
+};
 export default App;

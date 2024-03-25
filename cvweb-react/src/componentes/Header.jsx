@@ -1,25 +1,24 @@
 import React from 'react';
 import MyCarousel from './MyCarousel';
-import Logo from '../img/main.jpg';
 import '../estilos/Header.css';
 
 function Header(props){
-    const menuToggle=()=>{
+const menuToggle=()=>{
 	menuToggle.classList.toggle('active');
 	//navigation.classList.toggle('active');
 	};
-	const toggleMenu=()=>{
+const toggleMenu=()=>{
 	menuToggle.classList.remove('active');
 	//navigation.classList.remove('active');
 	};
-    const toggle=()=>{
-        var sec = document.getElementById('sec');
-        var nav = document.getElementById('navigation');
-        sec.classList.toggle('active');
-        nav.classList.toggle('active');
-    };
-    return(
-    <div className="sectionFS">
+const toggle=()=>{
+    var sec = document.getElementById('sec');
+    var nav = document.getElementById('navigation');
+    sec.classList.toggle('active');
+    nav.classList.toggle('active');
+};
+return(
+<div className="sectionFS">
 <section className="banner parallax" id="sec">
 	<header>
 		<a href={ props.linkYT } ><img className="logo" src={ require(`../img/${ props.logo }.jpg`) } /></a>
@@ -32,7 +31,6 @@ function Header(props){
 	<div className="contBtnLuz">
 		<a id="contacto" target="_blank" href="contacto.html"><span>contactar</span></a>
 	</div>
-
 	</div>
 	<ul className="sci">
 		<li><a href={ props.linkGit }><img src={ require(`../img/${ props.img1 }.png`) } /></a></li>
@@ -49,6 +47,7 @@ function Header(props){
 		</a></li>
 </ul>
 </div>
-</div>);
+</div>
+);
 } 
 export default Header;
