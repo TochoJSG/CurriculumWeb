@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-
+import ReactDOM from'react-dom/client';
+import {HashRouter} from'react-router-dom';
+import {ChakraProvider} from"@chakra-ui/react";
+import {StrictMode} from'react';
+import {createRoot} from'react-dom/client';
 import './index.css';
 import App from './App';
 import Inicio from './paginas/Inicio';
-//import Inicio from './paginas/Inicio';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(<Inicio />); 
+/*ReactDOM.createRoot.render(
+  <StrictMode>
+    <HashRouter>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
+    </HashRouter>
+  </StrictMode>,document.getElementById('root')
+  );*/
 /*root.render(
-<BrowserRouter><Inicio /></BrowserRouter>);*/
-root.render(
-  <React.StrictMode>
-    <Inicio />
-  </React.StrictMode>
-);
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);*/
