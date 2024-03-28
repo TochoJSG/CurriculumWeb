@@ -1,6 +1,7 @@
 import React from "react";
 import '../estilos/Skills.css';
 const Skills = props =>(
+	<>
     <div className="pc_card">
 		<div className="PcImgBx" data-text={ props.texto }>
 			<img src={ require(`../img/${ props.img1 }.png`) } />
@@ -13,6 +14,6 @@ const Skills = props =>(
 				<a href="contacto.html">Contactar</a>	
 			</div>
 		</div>
-	</div>
+	</div></>
 ); 
 export default Skills;

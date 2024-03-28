@@ -1,23 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import MyCarousel from './MyCarousel';
 import '../estilos/Header.css';
-
+/*const toggleMenu=()=>{
+	menuToggle.classList.remove('active');
+	//navigation.classList.remove('active');
+	};*/
 function Header(props){
-const menuToggle=()=>{
+const menuToggle = () =>{
 	menuToggle.classList.toggle('active');
 	//navigation.classList.toggle('active');
 	};
-const toggleMenu=()=>{
-	menuToggle.classList.remove('active');
-	//navigation.classList.remove('active');
-	};
-const toggle=()=>{
+	
+const toggle = () =>{
     var sec = document.getElementById('sec');
     var nav = document.getElementById('navigation');
     sec.classList.toggle('active');
     nav.classList.toggle('active');
-};
+    };
+const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
 return(
+	<>
 <div className="sectionFS">
 <section className="banner parallax" id="sec">
 	<header>
@@ -47,7 +53,7 @@ return(
 		</a></li>
 </ul>
 </div>
-</div>
+</div></>
 );
 } 
 export default Header;

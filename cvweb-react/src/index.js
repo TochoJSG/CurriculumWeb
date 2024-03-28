@@ -1,17 +1,19 @@
 import React from 'react';
-import ReactDOM from'react-dom/client';
-import {HashRouter} from'react-router-dom';
-import {ChakraProvider} from"@chakra-ui/react";
-import {StrictMode} from'react';
-import {createRoot} from'react-dom/client';
+import ReactDOM from'react-dom';
+import {createRoot} from 'react-dom/client';
+//import { BrowserRouter as Router } from 'react-router-dom';  Importa BrowserRouter para el enrutamiento
 import './index.css';
 import App from './App';
-import Inicio from './paginas/Inicio';
-
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
+ReactDOM.root.render(
+  <React.StrictMode>
+      <App />
+  </React.StrictMode>
+); 
+/* */
 
-root.render(<Inicio />); 
+//ReactDOM.createRoot.render(<React.StrictMode><App /></React.StrictMode>,document.getElementById('root'));
 /*ReactDOM.createRoot.render(
   <StrictMode>
     <HashRouter>
@@ -20,7 +22,10 @@ root.render(<Inicio />);
     </ChakraProvider>
     </HashRouter>
   </StrictMode>,document.getElementById('root')
-  );*/
+  );
+  
+  <React.StrictMode>
+  */
 /*root.render(
   <BrowserRouter>
     <App />
