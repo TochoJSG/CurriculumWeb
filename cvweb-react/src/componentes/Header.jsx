@@ -5,6 +5,7 @@ import '../estilos/Header.css';
 	menuToggle.classList.remove('active');
 	//navigation.classList.remove('active');
 	};*/
+	
 function Header(props){
 const menuToggle = () =>{
 	menuToggle.classList.toggle('active');
@@ -53,7 +54,8 @@ return(
 		</a></li>
 </ul>
 </div>
-</div></>
+</div>
+</>
 );
 } 
 export default Header;
