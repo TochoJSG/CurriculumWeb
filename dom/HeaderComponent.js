@@ -37,10 +37,10 @@ const habilidades = [
     }
 ];
 
-const misDatos = [{
-    pictureOne: './img/main.jpg',
-    pictureTwo: './img/main.jpg',
-    pictureThree: './img/main.jpg',
+const misDatos = {
+    pictureOne: '../img/main.jpg',
+    pictureTwo: '../img/main.jpg',
+    pictureThree: '../img/main.jpg',
     fullName: 'Salgado Garcia Jorge Arturo,',
     mainName: 'Jorge',
     devBranch: 'Fullstack DEV',
@@ -49,7 +49,7 @@ const misDatos = [{
     carrera:'Lic. en Ciencias de la Informatica',
     languages: 'Java, JavaScript applied to Node for React and Express devs, SQL, also C++/C# and a little PHP & Python',
     aboutMe:'knowledge in Java with Maven and Spring, SQL also JavaScript applied to Node for React and Express devs, in addition C++/C#, PHP and a little Python'
-}];
+};
 
 const carousel = `
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -60,7 +60,7 @@ const carousel = `
 	  </div>
 	  <div class="carousel-inner">
 		<div class="carousel-item active" data-bs-interval="10000">
-		  <img src="${misDatos.pictureOne}" class="d-block w-100" alt="Loading my Presentation picture...">
+		  <img src="./img/main.jpg" class="d-block w-100" alt="Loading my Presentation picture...">
 		  <div class="carousel-caption d-none d-md-block">
 			<h2>${misDatos.fullName}, <span>${misDatos.devBranch}</span></h2>
 			<p>${misDatos.carrera}</p>
@@ -119,14 +119,14 @@ const innerHeader = () =>{
         </ul>
     </section>
     <div id="navigation">
-    <ul>
-        <li data-text="Home"><a target="_blank" href="${ gitHub } " onclick="toggleMenu();">Main
-            </a></li>
-        <li data-text="About"><a id="buttonUs" href="#about" onclick="toggleMenu();">More About Me
-            </a></li>
-        <li data-text="Contact"><a id="buttonContact" href="contacto.php" onclick="toggleMenu();">Contact
-            </a></li>
-    </ul>
+        <ul>
+            <li data-text="Home"><a target="_blank" href="${ gitHub } " onclick="toggleMenu();">Main
+                </a></li>
+            <li data-text="About Me"><a id="buttonUs" href="#about" onclick="toggleMenu();">More About Me
+                </a></li>
+            <li data-text="Contact Me"><a id="buttonContact" href="contacto.php" onclick="toggleMenu();">Contact
+                </a></li>
+        </ul>
     </div>`;
     //header.innerHTML = componenteHeader;
 };
@@ -155,18 +155,18 @@ const innerFooter = ()=>{
 	footer.innerHTML = `
     <div class='cuerpoBody'>
     <footer>
-        <div class="container_foo">
-            <div class="sec aboutus">
-                <h2>About Me</h2>
-                <p>I have some experiences as developer, i start as DBA jr, that was my first job, i have ${misDatos.aboutMe}, i ve developed modules under requeriments in Scrum, i ve gave support and another experiences...
-                    </p>
-                <ul class="sci_">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                 </ul>
-            </div>
-            <div class='flechaFooter'>
+      <div class="container_foo">
+		<div class="sec aboutus">
+			<h2>About Me</h2>
+			<p>I have some experiences as developer, i started as DBA jr, that was my first job, i have ${misDatos.aboutMe}, i ve developed modules under requeriments in Scrum, i ve gave support and another experiences...
+				</p>
+			<ul class="sci_">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+			 </ul>
+		</div>
+        <div class="flechaFooter">
             <div class="sec quickLinks">
                 <h2>Links</h2>
                 <ul>
@@ -176,7 +176,7 @@ const innerFooter = ()=>{
             </div>
             <div class="sec contact">
                 <h2>Contact Info</h2>
-                <ul class="info">
+                <ul>
                     <li>
                         <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                         <span>Ciudad de Mexico  <strong>CDMX</strong></span>
@@ -191,13 +191,13 @@ const innerFooter = ()=>{
                         </li>
                 </ul>
             </div>
-            </div>
         </div>
+      </div>
     </footer>
     <div class="copyrightText">
         <p>Copyright 2021 Adming Desarrollos. All Right Reserved.</p>
     </div>
-    </div>`;
+</div>`;
 };
 const app = ()=>{
     innerHeader();

@@ -1,15 +1,17 @@
-<!--<?php require 'dom/constantes.php'; ?>-->
+<?php require 'dom/constantes.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jorge Salgado Garcia</title>
+	<meta charset="UTF-8"> 
+		<title>Jorge Salgado Garcia - Dev</title>
 	<link href="estilos/estiloCurriculum.css" rel="stylesheet" type="text/css"/>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&amp;version=v15.0" nonce="jfx8ZnYd"></script>
+	<link href="<?php echo $bootstrap_version;?>" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <div id="fb-root"></div><!-- Messenger plugin de chat Code -->
 <div id="fb-customer-chat" class="fb-customerchat"></div>
-<a href="https://api.whatsapp.com/send/?phone=525517971706&text=Gracias%20por%20contactarme%20como%20puedo%20ayudarte%20?" class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+<a href="<?php echo $whatsapp;?>" class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 <div class="containerFS">
 	<div id="header" class="sectionFS"></div>
 	<div class="sectionFS">

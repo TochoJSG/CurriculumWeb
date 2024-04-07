@@ -1,58 +1,54 @@
+<?php require 'dom/constantes.php'; ?>
 <!doctype html>
 <html lang="es">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ16T2G5PD"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ3SZHVK3W"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-DZ16T2G5PD');
+    
+      gtag('config', 'G-PZ3SZHVK3W');
     </script>
-	<title>JorgeASG</title>
 	<meta charset="UTF-8"> 
+		<title>JorgeSG - Dev</title>
 	<link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="/favicon.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
 	<script src="push.min.js"></script>
-	<link href="estilo_contacto.css"  rel="stylesheet" type="text/css"/>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="estilos/estilo_contacto.css"  rel="stylesheet" type="text/css"/>
+	<link href="<?php echo $bootstrap_version;?>" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVV756S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <script>
 	document.addEventListener('DOMContentLoaded', function(){
 		Push.create('Bienvenido',{
 		body:'Hi, i am interested to hear about any proyect  ',
-		icon:'COORP (2).jpg',
+		icon:'img/main.jpg',
 		timeout:6666,
 		onClick: function(){
-			window.location='https://materiasprimastocha.mercadoshops.com.mx/';
+			window.location='https://github.com/TochoJSG?tab=repositories';
 			this.close();
 			}
 		});
 	});
 </script>
 <header id="main-header">
-	<a id="logo-header" href="index.html">
-	<img class="logo" src="main.jpg" align="left" width=90px height=90px/></a>
-	<a id="logo-header" href="index.html">
+	<a id="logo-header" href="index.php">
+	<img class="logo" src="img/main.jpg" align="left" width=90px height=90px/></a>
+	<a id="logo-header" href="index.php">
 		<span class="site-name">JorgeSG</span></br>
 		<span class="site-desc" style="color:#fff;">Fullstack</span>
 	</a> <!-- / #logo-header -->
 	<nav>
 		<ul>
-			<li><a class="activeH" href="index.html">Main</a></li>
-			<li>
-				<a href="https://www.google.com/maps/dir//materias+primas+tocha/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x85ce03c248d73bdb:0xef38793f1e73fa6e?sa=X&ved=2ahUKEwj5rJbYlNvuAhUCJKwKHYXhD1wQ9RcwFXoECB0QBA">Google
-					</a></li>
+			<li><a class="activeH" href="index.php">Main</a></li>
+			<li><a href="<?php echo $google;?>">My Office</a></li>
 			<li><a href="nosotros_tocha.html">More about me</a></li>
 			<li><a href="#"><ion-icon name="logo-github" style="font-size:2.1em;">Github</ion-icon></a></li>
 		</ul>
 	</nav>
 </header>
-<a href="https://api.whatsapp.com/send/?phone=525535143631&text=Gracias%20por%20escribir%20a%20materias%20primas%20tocha,%20%C2%BFcomo%20te%20podemos%20ayudar?"
+<a href="<?php echo $whatsapp;?>"
 class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 <div id="fb-root"></div><!-- Messenger plugin de chat Code -->
 <div id="fb-customer-chat" class="fb-customerchat"></div>
@@ -127,7 +123,7 @@ class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 			<div class="infoBox">
 			<div>
 			<span><ion-icon name="location-outline"></ion-icon></span>
-			<p>Mexico City, Iztapalapa, <br><strong>CDMX</strong>
+			<p>Mexico City, <br><strong>CDMX</strong>
 				</p>
 			</div>
 			<div>
@@ -141,7 +137,7 @@ class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 				</a>
 			</div>
 			<ul class="socialesContact">
-				<li><a href="https://www.facebook.com/jorge.salgadogarcia.334"><ion-icon name="logo-facebook"></ion-icon></a></li>
+				<li><a href="<?php echo $miFacebook;?>"><ion-icon name="logo-facebook"></ion-icon></a></li>
 				<li><a href="https://github.com/TochoJSG?tab=repositories"><ion-icon name="logo-github"></ion-icon></a></li>
 				<li><a href="https://www.instagram.com/salgadogarciajorge/"><ion-icon name="logo-instagram"></ion-icon></a></li>
 				</ul>
@@ -157,21 +153,21 @@ class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 		<div class="wave" id="wave1"></div>
 	</div>
 	<ul class="social_icon">
-		<li><a href="https://www.facebook.com/Tocha-106771524802265"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		<li><a href="<?php echo $facebook;?>"><ion-icon name="logo-facebook"></ion-icon></a></li>
 		<li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
 		<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
 	</ul>
 	<ul class="menu_f">
-		<li><a href="index.html">Main Page</a></li>
+		<li><a target="_self" href="index.php">Main Page</a></li>
 		<li><a href="me.html">About me</a></li>
-		<li><a href="contacto.html">Contact</a></li>
+		<li><a target="_self" href="contacto.php">Contact</a></li>
 	</ul>
 	<div class="fb-comments" data-href="https://tochamateriasprimas.com/" data-width="100%" data-numposts="5"></div>
 </footer>
 <div class="copyrightText">
 	<div class="grid-container">
 	<div>
-	<a href="http://tochamateriasprimas.com/"><img class="logo" src="COORP (2).jpg" align="left"/>
+	<a href="http://tochamateriasprimas.com/"><img class="logo" src="img/adming.jpg" align="left"/>
 		</a>
 	</div>
 	<div>
@@ -180,13 +176,13 @@ class="btn-wsp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 		WebSites develop under requeriments; back and front develoment; desktop apps; Software with frameworks using the most modern librarys and standards</marquee>
 	</div>
 	<div>
-	<a href="http://admingtutoriales.com/"><img class="logo" src="adming.jpg" align="right"/>
+	<a href="http://admingtutoriales.com/"><img class="logo" src="img/main.jpg" align="right"/>
 		</a>
 	</div>
 	</div>
 </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="colaContact.js"></script>
+<script src="dom/colaContact.js"></script>
 </body>
 </html>
